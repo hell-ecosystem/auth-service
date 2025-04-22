@@ -1,6 +1,6 @@
 additional service for auth
 
-`Login`, `Verify`, `Revoke`
+`go get github.com/hell-ecosystem/auth-service`
 
 sample how to use
 ```go
@@ -10,7 +10,6 @@ import (
     "fmt"
     "net/http"
     "time"
-
     "your_project/pkg/auth/infra"
     "your_project/pkg/auth/service"
     "your_project/pkg/auth/middleware"
@@ -38,3 +37,5 @@ func secureHandler(w http.ResponseWriter, r *http.Request) {
     fmt.Fprintf(w, "Hello %s! Your role is %s\n", claims.UserID, claims.Role)
 }
 ```
+
+## dokcer-compose (redis) must be one for all auth in all services 

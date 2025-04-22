@@ -1,7 +1,8 @@
 additional service for auth
 
-sample how to use
+`Login`, `Verify`, `Revoke`
 
+sample how to use
 ```go
 package main
 
